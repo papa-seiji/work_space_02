@@ -66,7 +66,7 @@ setInterval(updateDateTime, 1000);
 
 
 // 目標の開幕日
-const openingDay = new Date('2024-03-29').getTime();
+const openingDay = new Date('2024-03-20').getTime();
 
 // 1秒ごとにカウントダウンを更新
 const countdown = setInterval(function() {
