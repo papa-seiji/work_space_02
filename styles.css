@@ -25,9 +25,9 @@ body {
   margin: 7px;
   padding: 7px;
   font-family: Arial, sans-serif;
-  background-image: url('img/Dodgers_大谷翔平.jpg');
+  background-image: url(img/Dodgers_大谷翔平.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 #datetime{
@@ -41,26 +41,26 @@ body {
   }
   
   #countdown {
-    font-size: 22px;
+    color: rgb(255, 0, 0);
+    font-size: 23px;
     font-weight: bold;
     background-color: rgba(0, 64, 255, 0.522);
   }
 
+
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     position: absolute;
-    top: 10%;
-    left: 42%;
-    /* right: -43%; */
-    transform: translate(-50%, -50%);
-    /* background-color: rgba(255, 255, 255, 0.445); */
-    padding: 20rem;
+    /* top: 50%; */
+    left: 8%;
+    /* transform: translate(-50%, -50%); */
+    /* padding: 0px; */
     border-radius: 10px;
+    background-color: rgba(72, 63, 248, 0.445);
 }
-
 
 .HomeRunCounter {
     font-size: 12px;
@@ -84,9 +84,9 @@ h1 {
     margin: 0 4px;
 }
 .mainus {
-    padding: 1px 15.5px;
-    font-size: 18px;
-    margin: 0 4px;
+  padding: 1px 15px;
+  font-size: 18px;
+  margin: 0 4px;
 }
 
 /* button:first-child {
