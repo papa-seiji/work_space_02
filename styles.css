@@ -47,24 +47,45 @@ body {
     background-color: rgba(0, 64, 255, 0.522);
   }
 
-
+/* Dodgers_大谷翔平.jpg用のCSS
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    /* top: 50%; */
     left: 8%;
-    /* transform: translate(-50%, -50%); */
-    /* padding: 0px; */
     border-radius: 10px;
     background-color: rgba(72, 63, 248, 0.445);
 }
+ */
 
+.container { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 62%;
+  left: 36%;
+  /* transform: translate(-50%, -50%); */
+  /* padding: 0px; */
+  border-radius: 10px;
+  background-color: rgba(72, 63, 248, 0.445);
+}
+
+/* Dodgers_大谷翔平.jpg用のCSS
 .HomeRunCounter {
     font-size: 12px;
     margin-bottom: 10px;
+}
+ */
+
+.HomeRunCounter {
+  font-size: 13px;
+  margin: 8px;
+  color: red;
+  font-weight: bold;
 }
 
 h1 {
@@ -84,7 +105,7 @@ h1 {
     margin: 0 4px;
 }
 .mainus {
-  padding: 1px 18px;
+  padding: 1px 20px;
   font-size: 18px;
   margin: 0 4px;
 }
