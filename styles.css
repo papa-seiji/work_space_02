@@ -1,0 +1,94 @@
+/* Reset CSS */
+
+/* マージンとパディングをリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* リストスタイルをリセット */
+ul, ol {
+    list-style: none;
+}
+
+/* リンクの装飾をリセット */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* その他の要素に適用するリセットスタイル */
+/* 例えば、フォーム要素、テーブル、ボタンなど */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('img/Dodgers_大谷翔平.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#datetime{
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.countdown-container {
+    text-align: center;
+    margin-top: 480px;
+  }
+  
+  #countdown {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(0, 64, 255, 0.522);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    /* right: -43%; */
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 255, 255, 0.445); */
+    padding: 20rem;
+    border-radius: 10px;
+}
+
+
+.HomeRunCounter {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+    background-color: rgba(0, 64, 255, 0.522);
+  }
+  
+#counter {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.plus{
+    padding: 1px 13px;
+    font-size: 18px;
+    margin: 0 4px;
+}
+.mainus {
+    padding: 1px 15.5px;
+    font-size: 18px;
+    margin: 0 4px;
+}
+
+/* button:first-child {
+  margin-right: 5px;
+} */
