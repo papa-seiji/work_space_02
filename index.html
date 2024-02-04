@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="jn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Run Counter</title>
+  <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('img/Dodgers_大谷翔平.jpg');
+        background-size: cover;
+        background-position: top;
+      }
+
+      #datetime{
+        font-size: 1.25em;
+        text-align: center;
+      }
+      
+      
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: right;
+            position: absolute;
+            top: 14%;
+            left: 50%;
+            right: -43%;
+            transform: translate(-50%, -50%);
+            /* background-color: rgba(255, 255, 255, 0.445); */
+            padding: 20rem;
+            border-radius: 10px;
+        }
+      
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      #counter {
+        font-size: 74px;
+        margin-bottom: 20px;
+      }
+      
+      button {
+        /*padding: 10px 20px;*/
+        font-size: 18px;
+        margin: 0 10px;
+      }
+      
+      button:first-child {
+        margin-right: 5px;
+      }
+      
+  </style>
+</head>
+<body>
+    <section>            
+        <div id="datetime"></div> <!-- 新しい要素 -->
+
+        <div class="container">
+            <h1>Home Run Counter</h1>
+            <div id="counter">0</div>
+            <button onclick="increment()">+</button>
+            <button onclick="decrement()">-</button>
+        </div>
+    </section> 
+    <script>
+      // カウンターの初期値
+      let counterValue = 0;
+    
+      // カウンターの更新
+      function updateCounter() {
+        // カウンターを表示する要素を取得し、カウンターの値を設定
+        const counterElement = document.getElementById('counter');
+        counterElement.textContent = counterValue;
+      }
+    
+      // インクリメント
+      function increment() {
+        counterValue++;
+        updateCounter();
+      }
+    
+      // デクリメント
+      function decrement() {
+        if (counterValue > 0) {
+          counterValue--;
+          updateCounter();
+        }
+      }
+  
+      // 日時の表示を更新
+      function updateDateTime() {
+        // 現在の日時を取得
+        const now = new Date();
+        const year = now.getFullYear();
+        let month = now.getMonth() + 1;
+        if (month < 10) {
+          month = '0' + month;
+        }
+        let day = now.getDate();
+        if (day < 10) {
+          day = '0' + day;
+        }
+        let hours = now.getHours();
+        if (hours < 10) {
+          hours = '0' + hours;
+        }
+        let minutes = now.getMinutes();
+        if (minutes < 10) {
+          minutes = '0' + minutes;
+        }
+        let seconds = now.getSeconds();
+        if (seconds < 10) {
+          seconds = '0' + seconds;
+        }
+    
+        // 日付と時刻を文字列に連結
+        const dateTimeString = year + '/' + month + '/' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+    
+        // 日時を表示する要素を取得し、日時を設定
+        const datetimeElement = document.getElementById('datetime');
+        datetimeElement.textContent = '現在の日時: ' + dateTimeString;
+      }
+    
+      // ページロード時にカウンターと日時を更新
+      updateCounter();
+      updateDateTime();
+    
+      // 1秒ごとに日時を更新
+      setInterval(updateDateTime, 1000);
+    </script>
+        
+    </body>
+    </html>
