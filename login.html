@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ログイン</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>ログイン</h2>
+    <form id="loginForm" onsubmit="return login()">
+      <label for="password">パスワード：</label>
+      <input type="password" id="password" maxlength="4">
+      <button type="submit">ログイン</button>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      const passwordInput = document.getElementById('password').value;
+      const correctPassword = '1234'; // パスワードはここで設定
+
+      if (passwordInput === correctPassword) {
+        // パスワードが一致する場合、index.htmlにリダイレクト
+        window.location.href = 'index.html';
+        return false; // ページ遷移をキャンセル
+      } else {
+        alert('パスワードが間違っています。もう一度お試しください。');
+        return false; // ページ遷移をキャンセル
+      }
+    }
+  </script>
+</body>
+</html>
