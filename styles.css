@@ -25,7 +25,7 @@ body {
   margin: 7px;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-image: url(img/Dodgers_大谷翔平.jpg);
+  background-image: url(img/01_Dodgers_大谷翔平.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -84,7 +84,7 @@ h1 {
     margin: 0 4px;
 }
 .mainus {
-  padding: 1px 16px;
+  padding: 1px 18px;
   font-size: 18px;
   margin: 0 4px;
 }
