@@ -22,8 +22,8 @@ a {
 /* 例えば、フォーム要素、テーブル、ボタンなど */
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 7px;
+  padding: 7px;
   font-family: Arial, sans-serif;
   background-image: url('img/Dodgers_大谷翔平.jpg');
   background-size: cover;
