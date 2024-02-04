@@ -22,17 +22,18 @@ a {
 /* 例えば、フォーム要素、テーブル、ボタンなど */
 
 body {
-  margin: 7px;
-  padding: 20px;
+  margin: 25px;
+  padding: 0px;
   font-family: Arial, sans-serif;
   background-image: url(img/01_Dodgers_大谷翔平.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#datetime{
-  font-size: 1.25em;
+#datetime {
+  font-size: 0.25em;
   text-align: center;
+  font-weight: bolder;
 }
 
 .countdown-container {
@@ -66,7 +67,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 62%;
+  top: 56%;
   left: 36%;
   /* transform: translate(-50%, -50%); */
   /* padding: 0px; */
@@ -100,7 +101,7 @@ h1 {
 }
 
 .plus{
-    padding: 1px 13px;
+    padding: 1px 11px;
     font-size: 18px;
     margin: 0 4px;
 }
