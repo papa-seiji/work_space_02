@@ -2,115 +2,98 @@
 
 /* マージンとパディングをリセット */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* リストスタイルをリセット */
 ul, ol {
-    list-style: none;
+  list-style: none;
 }
 
 /* リンクの装飾をリセット */
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* その他の要素に適用するリセットスタイル */
 /* 例えば、フォーム要素、テーブル、ボタンなど */
 
 body {
-  margin: 25px;
-  padding: 0px;
-  font-family: Arial, sans-serif;
-  background-image: url(img/01_Dodgers_大谷翔平.jpg);
-  background-size: cover;
-  background-position: center;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+overflow: hidden;
+background-image: url('img/01_Dodgers_大谷翔平.jpg');
+background-size: cover;
+background-position: center;
+animation: slide 20s linear infinite;
 }
 
-#datetime {
-  font-size: 0.25em;
-  text-align: center;
-  font-weight: bolder;
+@keyframes slide {
+0% {
+  background-image: url('img/01_Dodgers_大谷翔平.jpg');
 }
-
-.countdown-container {
-    text-align: center;
-    margin-top: 540px;
-  }
-  
-  #countdown {
-    color: rgb(255, 0, 0);
-    font-size: 23px;
-    font-weight: bold;
-    background-color: rgba(0, 64, 255, 0.522);
-  }
-
-/* Dodgers_大谷翔平.jpg用のCSS
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 8%;
-    border-radius: 10px;
-    background-color: rgba(72, 63, 248, 0.445);
+33.33% {
+  background-image: url('img/02_Dodgers_大谷翔平.jpg');
 }
- */
+66.66% {
+  background-image: url('img/03_WBC_大谷翔平.jpg');
+}
+100% {
+  background-image: url('img/04_LA_Dodgers.jpg');
+}
+}
 
 .container { 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 56%;
-  left: 36%;
-  /* transform: translate(-50%, -50%); */
-  /* padding: 0px; */
-  border-radius: 10px;
-  background-color: rgba(72, 63, 248, 0.445);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: absolute;
+top: 56%;
+left: 34%;
+border-radius: 10px;
+background-color: rgba(72, 63, 248, 0.445);
 }
 
-/* Dodgers_大谷翔平.jpg用のCSS
 .HomeRunCounter {
-    font-size: 12px;
-    margin-bottom: 10px;
-}
- */
-
-.HomeRunCounter {
-  font-size: 13px;
-  margin: 8px;
-  color: red;
-  font-weight: bold;
+font-size: 13px;
+margin: 8px;
+color: red;
+font-weight: bold;
 }
 
 h1 {
-    font-size: 24px;
-    /* margin-bottom: 10px; */
-    background-color: rgba(0, 64, 255, 0.522);
-  }
-  
+font-size: 24px;
+background-color: rgba(0, 64, 255, 0.522);
+}
+
 #counter {
-    font-size: 50px;
-    margin-bottom: 10px;
+font-size: 50px;
+margin-bottom: 10px;
 }
 
-.plus{
-    padding: 1px 9px;
-    font-size: 17px;
-    /* margin: 0 4px; */
+.plus {
+padding: 1px 9px;
+font-size: 17px;
 }
+
 .mainus {
-  padding: 1px 11px;
-  font-size: 18px;
-  /* margin: 0 4px; */
+padding: 1px 11px;
+font-size: 18px;
 }
 
-/* button:first-child {
-  margin-right: 5px;
-} */
+.countdown-container {
+text-align: center;
+margin-top: 540px;
+}
+
+#countdown {
+color: rgb(255, 0, 0);
+font-size: 23px;
+font-weight: bold;
+background-color: rgba(0, 64, 255, 0.522);
+}
