@@ -1,99 +1,287 @@
 /* Reset CSS */
-
-/* マージンとパディングをリセット */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* リストスタイルをリセット */
 ul, ol {
   list-style: none;
 }
 
-/* リンクの装飾をリセット */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* その他の要素に適用するリセットスタイル */
-/* 例えば、フォーム要素、テーブル、ボタンなど */
-
 body {
-margin: 0;
-padding: 0;
-font-family: Arial, sans-serif;
-overflow: hidden;
-background-image: url('img/01_Dodgers_大谷翔平.jpg');
-background-size: cover;
-background-position: center;
-animation: slide 60s linear infinite;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background-image: url('img/01_Dodgers_大谷翔平.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: slide 20s linear infinite;
 }
 
 @keyframes slide {
-0% {
-  background-image: url('img/01_Dodgers_大谷翔平.jpg');
-}
-33.33% {
-  background-image: url('img/02_Dodgers_大谷翔平.jpg');
-}
-66.66% {
-  background-image: url('img/03_WBC_大谷翔平.jpg');
-}
-100% {
-  background-image: url('img/04_LA_Dodgers.jpg');
-}
+  0% {
+      background-image: url('img/01_Dodgers_大谷翔平.jpg');
+  }
+  25% {
+      background-image: url('img/02_Dodgers_大谷翔平.jpg');
+  }
+  50% {
+      background-image: url('img/03_WBC_大谷翔平.jpg');
+  }
+  75% {
+      background-image: url('img/04_LA_Dodgers.jpg');
+  }
+  100% {
+      background-image: url('img/01_Dodgers_大谷翔平.jpg');
+  }
 }
 
 .container { 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-position: absolute;
-top: 56%;
-left: 34%;
-border-radius: 10px;
-background-color: rgba(72, 63, 248, 0.445);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 56%;
+  left: 34%;
+  border-radius: 10px;
+  background-color: rgba(72, 63, 248, 0.445);
 }
 
 .HomeRunCounter {
-font-size: 13px;
-margin: 8px;
-color: red;
-font-weight: bold;
+  font-size: 13px;
+  margin: 8px;
+  color: red;
+  font-weight: bold;
 }
 
 h1 {
-font-size: 24px;
-background-color: rgba(0, 64, 255, 0.522);
+  font-size: 24px;
+  background-color: rgba(0, 64, 255, 0.522);
 }
 
 #counter {
-font-size: 50px;
-margin-bottom: 10px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 .plus {
-padding: 1px 9px;
-font-size: 17px;
+  padding: 1px 9px;
+  font-size: 17px;
 }
 
 .mainus {
-padding: 1px 11px;
-font-size: 18px;
+  padding: 1px 11px;
+  font-size: 18px;
 }
 
 .countdown-container {
-text-align: center;
-margin-top: 540px;
+  text-align: center;
+  margin-top: 540px;
 }
 
 #countdown {
-color: rgb(255, 0, 0);
-font-size: 23px;
-font-weight: bold;
-background-color: rgba(0, 64, 255, 0.522);
+  color: rgb(255, 0, 0);
+  font-size: 23px;
+  font-weight: bold;
+  background-color: rgba(0, 64, 255, 0.522);
+}
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.background-container {
+  width: 400%; /* 4つの画像を横に並べるために、幅を設定 */
+  height: 100vh; /* 画面の高さいっぱいに表示 */
+  overflow: hidden; /* はみ出したコンテンツを非表示にする */
+  animation: slide 60ms linear infinite; /* アニメーションの設定 */
+}
+
+/* アニメーション */
+@keyframes slide {
+  0% {
+      transform: translateX(0%); /* 最初は左端からスタート */
+  }
+  100% {
+      transform: translateX(-75%); /* 最後は左にスクロールして終了 */
+  }
+}
+
+.background-image {
+  width: 25%; /* 各画像の幅 */
+  height: 100%; /* 画面の高さいっぱいに表示 */
+  float: left; /* 画像を横に並べる */
+  background-size: cover;
+  background-position: center;
+}
+.container { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 56%;
+  left: 34%;
+  border-radius: 10px;
+  background-color: rgba(72, 63, 248, 0.445);
+}
+
+.HomeRunCounter {
+  font-size: 13px;
+  margin: 8px;
+  color: red;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+  background-color: rgba(0, 64, 255, 0.522);
+}
+
+#counter {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.plus {
+  padding: 1px 9px;
+  font-size: 17px;
+}
+
+.mainus {
+  padding: 1px 11px;
+  font-size: 18px;
+}
+
+.countdown-container {
+  text-align: center;
+  margin-top: 540px;
+}
+
+#countdown {
+  color: rgb(255, 0, 0);
+  font-size: 23px;
+  font-weight: bold;
+  background-color: rgba(0, 64, 255, 0.522);
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background-image: url('img/01_Dodgers_大谷翔平.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url('img/01_Dodgers_大谷翔平.jpg');
+    }
+    25% {
+        background-image: url('img/02_Dodgers_大谷翔平.jpg');
+    }
+    50% {
+        background-image: url('img/03_WBC_大谷翔平.jpg');
+    }
+    75% {
+        background-image: url('img/04_LA_Dodgers.jpg');
+    }
+    100% {
+        background-image: url('img/01_Dodgers_大谷翔平.jpg');
+    }
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 56%;
+    left: 34%;
+    border-radius: 10px;
+    background-color: rgba(72, 63, 248, 0.445);
+}
+
+.HomeRunCounter {
+    font-size: 13px;
+    margin: 8px;
+    color: red;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    background-color: rgba(0, 64, 255, 0.522);
+}
+
+#counter {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.plus {
+    padding: 1px 9px;
+    font-size: 17px;
+}
+
+.mainus {
+    padding: 1px 11px;
+    font-size: 18px;
+}
+
+.countdown-container {
+    text-align: center;
+    margin-top: 540px;
+}
+
+#countdown {
+    color: rgb(255, 0, 0);
+    font-size: 23px;
+    font-weight: bold;
+    background-color: rgba(0, 64, 255, 0.522);
 }
