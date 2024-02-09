@@ -22,7 +22,7 @@ body {
   background-image: url('img/01_Dodgers_大谷翔平.jpg');
   background-size: cover;
   background-position: center;
-  animation: slide 20s linear infinite;
+  animation: slide 60s linear infinite;
 }
 
 @keyframes slide {
