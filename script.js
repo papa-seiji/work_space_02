@@ -1,27 +1,3 @@
-// // カウンターの初期値
-// let counterValue = 0;
-
-// // カウンターの更新
-// function updateCounter() {
-//   // カウンターを表示する要素を取得し、カウンターの値を設定
-//   const counterElement = document.getElementById('counter');
-//   counterElement.textContent = counterValue;
-// }
-
-// // インクリメント
-// function increment() {
-//   counterValue++;
-//   updateCounter();
-// }
-
-// // デクリメント
-// function decrement() {
-//   if (counterValue > 0) {
-//     counterValue--;
-//     updateCounter();
-//   }
-// }
-
 // カウンターの初期値をローカルストレージから取得する
 let counterValue = localStorage.getItem('counterValue') ? parseInt(localStorage.getItem('counterValue')) : 0;
 
