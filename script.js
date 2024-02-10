@@ -72,7 +72,6 @@ updateDateTime();
 setInterval(updateDateTime, 1000);
 
 
-
 // 目標の開幕日
 const openingDay = new Date('2024-03-20').getTime();
 
