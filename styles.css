@@ -29,17 +29,23 @@ body {
   0% {
       background-image: url('img/01_Dodgers_大谷翔平.jpg');
   }
-  25% {
+  17% {
       background-image: url('img/02_Dodgers_大谷翔平.jpg');
   }
-  50% {
+  34% {
       background-image: url('img/03_WBC_大谷翔平.jpg');
   }
-  75% {
+  51% {
       background-image: url('img/04_LA_Dodgers.jpg');
   }
+  68% {
+      background-image: url('img/05_Dodgers_大谷翔平.jpg');
+  }
+  85% {
+    background-image: url('img/06_Dodgers_大谷翔平.jpg');
+  }
   100% {
-      background-image: url('img/01_Dodgers_大谷翔平.jpg');
+    background-image: url('img/01_Dodgers_大谷翔平.jpg');
   }
 }
 
