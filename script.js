@@ -11,6 +11,7 @@ function updateCounter() {
     counterElement.textContent = counterValue;
 }
 
+
 // インクリメント
 function increment() {
     counterValue++;
