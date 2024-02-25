@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Home Run Counter</title>
+  <script src="/socket.io/socket.io.js"></script>
+
+</head>
+<body>
+  <section>
+    <div id="datetime"></div>
+    <div class="container">
+      <div class="HomeRunCounter">Home Run Counter</div>
+      <div id="counter">0</div>
+      <!-- ボタンにクリックイベントを追加 -->
+      <button class="plus" id="incrementBtn">+</button>
+      <button class="mainus" id="decrementBtn">-</button>
+    </div>
+    <div class="countdown-container">
+      <h1>3/20 開幕戦まで</h1>
+      <div id="countdown"></div>
+    </div>
+  </section>
+
+  <section>
+    <!-- <h2>チャット</h2> -->
+    <div id="message-container">
+      <ul id="messages"></ul>
+    </div>
+    <input id="message-input" type="text" placeholder="メッセージを入力">
+    <button id="send-button">送信</button>
+  </section>
+  <script src="script.js"></script>
+  <script>
+
+    // インクリメントボタンの要素を取得
+    const incrementBtn = document.getElementById('incrementBtn');
+    // インクリメントボタンにクリックイベントを追加
+    incrementBtn.addEventListener('click', () => {
+      // サーバーにインクリメントイベントを送信
+      socket.emit('increment');
+    });
+
+    // デクリメントボタンの要素を取得
+    const decrementBtn = document.getElementById('decrementBtn');
+    // デクリメントボタンにクリックイベントを追加
+    decrementBtn.addEventListener('click', () => {
+      // サーバーにデクリメントイベントを送信
+      socket.emit('decrement');
+    });
+
+  </script>
+</body>
+</html>
