@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://localhost:* 'unsafe-inline' https://cdn.socket.io">
+
   <link rel="stylesheet" href="styles.css">
   <title>Home Run Counter</title>
-  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="/socket.io/socket.io.js"></script>
   <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
 
 </head>
